@@ -1,0 +1,18 @@
+class CDOTA_Modifier_Kez_Katana : public CDOTA_Buff
+{
+	int32 katana_attack_range;
+	float32 katana_base_attack_time;
+	int32 katana_agility_bonus_base_damage;
+	int32 katana_bleed_attack_damage_pct;
+	int32 katana_base_ms;
+	float32 katana_bleed_duration;
+	int32 katana_swap_bonus_damage;
+	float32 impale_duration;
+	int32 bleed_as_rupture_pct;
+	int32 max_stacks;
+	int32 m_nBonusPreAttackDamage;
+	bool m_bBackstab;
+	float32 m_flStacksForLifesteal;
+	AttackRecord_t m_nImpaleStartAttackRecord;
+	AttackRecord_t m_nImpaleEndAttackRecord;
+};

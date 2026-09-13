@@ -1,0 +1,35 @@
+class CDOTACourierController
+{
+	bool m_bAutoCourierAutoBurst;
+	bool m_bAutoCourierAutoDeliver;
+	bool m_bDeliverWhileVisibleOnly;
+	CHandle< CDOTA_Unit_Courier > m_hCourier;
+	PlayerID_t m_nPlayerID;
+	bool m_bUseNewLogic;
+	DOTA_SHOP_TYPE m_eFSMShop;
+	CHandle< CBaseEntity > m_hFSMUnit;
+	ECourierState m_eFSMState;
+	bool m_bFSMStashAfter;
+	bool m_bManualRequest;
+	bool m_bIgnoreNextPlayerInteraction;
+	bool m_bWasAlive;
+	bool m_bTargetWasAlive;
+	CountdownTimer m_TransitionTimer;
+	CountdownTimer m_ManualTimer;
+	float32 m_flCourier_wait_time_item_purchase;
+	float32 m_flCourier_wait_time_item_mark;
+	float32 m_flCourier_wait_time_manualorder;
+	float32 m_flCourier_wait_time_manualorder_stop;
+	float32 m_flCourier_nondivert_range;
+	float32 m_flCourier_min_dot_for_divert;
+	float32 m_flCourier_max_divert_length;
+	float32 m_flCourier_max_divert_mult;
+	float32 m_flCourier_divert_near_shop_dist;
+	CUtlVector< bool > m_vecAutoState;
+	int32 m_nLastSecondCaptured;
+	int32 m_nMoveCount;
+	VectorWS m_vLastPos;
+	bool m_bDebugging;
+	bool m_bTriggerDebug;
+	DebugOverlayBits_t m_eDebugBits;
+};

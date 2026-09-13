@@ -1,0 +1,3 @@
+class CInfoScoutSpawnDire : public CPointEntity
+{
+};

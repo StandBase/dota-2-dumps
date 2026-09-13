@@ -1,0 +1,3 @@
+class CDOTA_Dazzle_NothlProjection_PhysicalBodyDebuff : public CDOTA_Modifier_Muerta_PartingShot_PhysicalBodyDebuff
+{
+};

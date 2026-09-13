@@ -1,0 +1,99 @@
+class CBaseEntity : public CEntityInstance
+{
+	CBodyComponent* m_CBodyComponent;
+	CNetworkTransmitComponent m_NetworkTransmitComponent;
+	CUtlVector< thinkfunc_t > m_aThinkFunctions;
+	// MNotSaved
+	int32 m_iCurrentThinkContext;
+	GameTick_t m_nLastThinkTick;
+	bool m_bDisabledContextThinks;
+	// MNotSaved
+	CTypedBitVec< 64 > m_isSteadyState;
+	// MNotSaved
+	float32 m_lastNetworkChange;
+	BASEPTR m_think;
+	CUtlVector< ResponseContext_t > m_ResponseContexts;
+	CUtlSymbolLarge m_iszResponseContext;
+	ENTITYFUNCPTR m_pfnTouch;
+	USEPTR m_pfnUse;
+	ENTITYFUNCPTR m_pfnBlocked;
+	BASEPTR m_pfnMoveDone;
+	int32 m_iHealth;
+	int32 m_iMaxHealth;
+	uint8 m_lifeState;
+	float32 m_flDamageAccumulator;
+	DamageOptions_t m_takedamage;
+	bool m_bTakesDamage;
+	TakeDamageFlags_t m_nTakeDamageFlags;
+	EntityPlatformTypes_t m_nPlatformType;
+	MoveCollide_t m_MoveCollide;
+	MoveType_t m_MoveType;
+	MoveType_t m_nPreviouslySetMoveType;
+	MoveType_t m_nActualMoveType;
+	// MNotSaved
+	uint8 m_nWaterTouch;
+	// MNotSaved
+	uint8 m_nSlimeTouch;
+	bool m_bRestoreInHierarchy;
+	CUtlSymbolLarge m_target;
+	CHandle< CBaseFilter > m_hDamageFilter;
+	CUtlSymbolLarge m_iszDamageFilterName;
+	float32 m_flMoveDoneTime;
+	CUtlStringToken m_nSubclassID;
+	// MKV3TransferSaveOpsForField = "GetEngineTimeSaveRestoreOps"
+	float32 m_flAnimTime;
+	// MKV3TransferSaveOpsForField = "GetEngineTimeSaveRestoreOps"
+	float32 m_flSimulationTime;
+	GameTime_t m_flCreateTime;
+	bool m_bClientSideRagdoll;
+	uint8 m_ubInterpolationFrame;
+	VectorWS m_vPrevVPhysicsUpdatePos;
+	uint8 m_iTeamNum;
+	// MSaveBehavior (UNKNOWN FOR PARSER)
+	CUtlSymbolLarge m_iGlobalname;
+	// MNotSaved
+	int32 m_iSentToClients;
+	CUtlString m_sUniqueHammerID;
+	uint32 m_spawnflags;
+	GameTick_t m_nNextThinkTick;
+	// MKV3TransferSaveOpsForField = "GetEngineTickSaveRestoreOps"
+	int32 m_nSimulationTick;
+	CEntityIOOutput m_OnKilled;
+	uint32 m_fFlags;
+	Vector m_vecAbsVelocity;
+	CNetworkVelocityVector m_vecVelocity;
+	// MNotSaved
+	int32 m_nPushEnumCount;
+	// MNotSaved
+	CCollisionProperty* m_pCollision;
+	CHandle< CBaseEntity > m_hEffectEntity;
+	CHandle< CBaseEntity > m_hOwnerEntity;
+	uint32 m_fEffects;
+	CHandle< CBaseEntity > m_hGroundEntity;
+	int32 m_nGroundBodyIndex;
+	float32 m_flFriction;
+	float32 m_flElasticity;
+	float32 m_flGravityScale;
+	float32 m_flTimeScale;
+	float32 m_flWaterLevel;
+	bool m_bGravityDisabled;
+	bool m_bAnimatedEveryTick;
+	float32 m_flActualGravityScale;
+	bool m_bGravityActuallyDisabled;
+	bool m_bDisableLowViolence;
+	uint8 m_nWaterType;
+	int32 m_iEFlags;
+	CEntityIOOutput m_OnUser1;
+	CEntityIOOutput m_OnUser2;
+	CEntityIOOutput m_OnUser3;
+	CEntityIOOutput m_OnUser4;
+	int32 m_iInitialTeamNum;
+	GameTime_t m_flNavIgnoreUntilTime;
+	QAngle m_vecAngVelocity;
+	bool m_bNetworkQuantizeOriginAndAngles;
+	bool m_bLagCompensate;
+	CHandle< CBaseEntity > m_pBlocker;
+	float32 m_flLocalTime;
+	float32 m_flVPhysicsUpdateLocalTime;
+	BloodType m_nBloodType;
+};

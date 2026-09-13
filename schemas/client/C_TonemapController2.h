@@ -1,0 +1,9 @@
+// MEntityAllowsPortraitWorldSpawn
+class C_TonemapController2 : public C_BaseEntity
+{
+	float32 m_flAutoExposureMin;
+	float32 m_flAutoExposureMax;
+	float32 m_flExposureAdaptationSpeedUp;
+	float32 m_flExposureAdaptationSpeedDown;
+	float32 m_flTonemapEVSmoothingRange;
+};

@@ -1,0 +1,39 @@
+class C_ColorCorrection : public C_BaseEntity
+{
+	// MNotSaved
+	VectorWS m_vecOrigin;
+	// MNotSaved
+	float32 m_MinFalloff;
+	// MNotSaved
+	float32 m_MaxFalloff;
+	// MNotSaved
+	float32 m_flFadeInDuration;
+	// MNotSaved
+	float32 m_flFadeOutDuration;
+	// MNotSaved
+	float32 m_flMaxWeight;
+	// MNotSaved
+	float32 m_flCurWeight;
+	// MNotSaved
+	char[512] m_netlookupFilename;
+	// MNotSaved
+	bool m_bEnabled;
+	// MNotSaved
+	bool m_bMaster;
+	// MNotSaved
+	bool m_bClientSide;
+	// MNotSaved
+	bool m_bExclusive;
+	// MNotSaved
+	bool[1] m_bEnabledOnClient;
+	// MNotSaved
+	float32[1] m_flCurWeightOnClient;
+	// MNotSaved
+	bool[1] m_bFadingIn;
+	// MNotSaved
+	float32[1] m_flFadeStartWeight;
+	// MNotSaved
+	float32[1] m_flFadeStartTime;
+	// MNotSaved
+	float32[1] m_flFadeDuration;
+};

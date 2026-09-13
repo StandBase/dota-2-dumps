@@ -1,0 +1,16 @@
+class CDOTA_Ability_Tusk_IceShards : public CDOTABaseAbility
+{
+	int32 m_iProjectile;
+	float32 shard_width;
+	float32 shard_damage;
+	int32 shard_count;
+	float32 shard_speed;
+	float32 shard_duration;
+	float32 shard_angle_step;
+	float32 shard_distance;
+	VectorWS m_vSpawnOrigin;
+	Vector m_vDirection;
+	CUtlVector< CHandle< CBaseEntity > > m_vecShards;
+	CDOTABaseAbility* m_pIceShardsStop;
+	ParticleIndex_t m_nFXIndex;
+};

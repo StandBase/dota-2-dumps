@@ -1,0 +1,3 @@
+class CDOTA_Modifier_Venomancer_NoxiousPlagueSecondary : public CDOTA_Modifier_Venomancer_NoxiousPlaguePrimary
+{
+};

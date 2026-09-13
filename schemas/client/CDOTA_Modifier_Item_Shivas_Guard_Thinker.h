@@ -1,0 +1,11 @@
+class CDOTA_Modifier_Item_Shivas_Guard_Thinker : public CDOTA_Buff
+{
+	float32 m_fCurRadius;
+	GameTime_t m_fLastThink;
+	CUtlVector< CHandle< C_BaseEntity > > m_entitiesHit;
+	CountdownTimer m_ViewerTimer;
+	int32 blast_speed;
+	float32 blast_radius;
+	int32 blast_damage;
+	float32 blast_debuff_duration;
+};

@@ -1,0 +1,3 @@
+class CInfoScoutSpawnRadiant : public CPointEntity
+{
+};

@@ -1,0 +1,24 @@
+// MGetKV3ClassDefaults = Could not parse KV3 Defaults
+class fogplayerparams_t
+{
+	CHandle< CFogController > m_hCtrl;
+	float32 m_flTransitionTime;
+	Color m_OldColor;
+	float32 m_flOldStart;
+	float32 m_flOldEnd;
+	// MNotSaved
+	float32 m_flOldMaxDensity;
+	// MNotSaved
+	float32 m_flOldHDRColorScale;
+	// MNotSaved
+	float32 m_flOldFarZ;
+	Color m_NewColor;
+	float32 m_flNewStart;
+	float32 m_flNewEnd;
+	// MNotSaved
+	float32 m_flNewMaxDensity;
+	// MNotSaved
+	float32 m_flNewHDRColorScale;
+	// MNotSaved
+	float32 m_flNewFarZ;
+};

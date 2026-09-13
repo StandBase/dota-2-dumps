@@ -1,0 +1,3 @@
+class CNmChainLookatTask : public CNmPoseTask
+{
+};

@@ -1,0 +1,17 @@
+class CDOTA_Modifier_Dawnbreaker_Luminosity_Attack_Buff : public CDOTA_Buff
+{
+	bool m_bIsBuffedAttack;
+	int32 heal_pct;
+	int32 bonus_damage;
+	float32 heal_radius;
+	int32 heal_from_creeps;
+	int32 allied_healing_pct;
+	bool triggered_by_celestial_hammer;
+	CUtlVector< CHandle< CBaseEntity > > hTargets;
+	float32 m_flTotalToHeal;
+	bool m_bHasProccedCooldownReduction;
+	float32 cooldown_reduction;
+	float32 movespeed_bonus_duration;
+	float32 movespeed_bonus_from_creeps;
+	bool m_bShouldRecreate;
+};

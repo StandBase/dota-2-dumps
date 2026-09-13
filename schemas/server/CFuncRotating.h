@@ -1,0 +1,24 @@
+class CFuncRotating : public CBaseModelEntity
+{
+	CEntityIOOutput m_OnStopped;
+	CEntityIOOutput m_OnStarted;
+	CEntityIOOutput m_OnReachedStart;
+	RotationVector m_localRotationVector;
+	float32 m_flSpeed;
+	float32 m_flFanFriction;
+	float32 m_flAttenuation;
+	float32 m_flVolume;
+	float32 m_flTargetSpeed;
+	float32 m_flMaxSpeed;
+	float32 m_flBlockDamage;
+	CGameSoundEventName m_NoiseRunning;
+	bool m_bReversed;
+	bool m_bAccelDecel;
+	QAngle m_prevLocalAngles;
+	QAngle m_angStart;
+	bool m_bStopAtStartPos;
+	// MNotSaved
+	Vector m_vecClientOrigin;
+	// MNotSaved
+	QAngle m_vecClientAngles;
+};

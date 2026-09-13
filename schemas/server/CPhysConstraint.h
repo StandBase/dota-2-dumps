@@ -1,0 +1,18 @@
+class CPhysConstraint : public CLogicalEntity
+{
+	// MPhysPtr
+	IPhysicsJoint* m_hJoint;
+	CUtlSymbolLarge m_nameAttach1;
+	CUtlSymbolLarge m_nameAttach2;
+	CHandle< CBaseEntity > m_hAttach1;
+	CHandle< CBaseEntity > m_hAttach2;
+	CUtlSymbolLarge m_nameAttachment1;
+	CUtlSymbolLarge m_nameAttachment2;
+	CGameSoundEventName m_breakSound;
+	float32 m_forceLimit;
+	float32 m_torqueLimit;
+	float32 m_minTeleportDistance;
+	bool m_bSnapObjectPositions;
+	bool m_bTreatEntity1AsInfiniteMass;
+	CEntityIOOutput m_OnBreak;
+};
